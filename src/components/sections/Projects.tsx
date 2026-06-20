@@ -36,7 +36,7 @@ export default function Projects() {
                 <div className="flex flex-wrap gap-2 mb-6">{project.tech.map(tech => <span key={tech} className="text-xs font-medium px-3 py-1 rounded-full bg-primary/10 text-primary border border-primary/20">{tech}</span>)}</div>
                 <div className="flex gap-4">
                   <a href={project.github} className="flex items-center gap-2 text-sm text-white/80 hover:text-primary"><FaGithub /> Code</a>
-                  <a href={project.demo} className="flex items-center gap-2 text-sm text-white/80 hover:text-primary"><FaExternalLinkAlt /> Live Demo</a>
+                
                 </div>
               </div>
             </motion.div>

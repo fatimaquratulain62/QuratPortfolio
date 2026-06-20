@@ -8,7 +8,7 @@
   resumeUrl: "/assets/cv.pdf",
   image: "/assets/profile.png",
   socials: {
-    github: "https://github.com/quratulain-fatimaa",
+    github: "https://github.com/fatimaquratulain62",
     linkedin: "https://linkedin.com/in/quratulain-fatimaa",
     email: "mailto:quratulain2405qz@gmail.com",
   }
@@ -36,8 +36,8 @@ export const PROJECTS = [
     tech: ["Next.js", "TypeScript", "OpenAI", "Tailwind"],
     tags: ["Web", "AI"],
     features: ["AI Resume Builder", "Auto Job Matching", "Dark Mode UI"],
-    github: "#",
-    demo: "#",
+    github: "",
+    //demo: "#",
   },
   {
     title: "Budget Tracker App",
@@ -46,8 +46,8 @@ export const PROJECTS = [
     tech: ["React", "Node.js", "Express", "MongoDB"],
     tags: ["Web"],
     features: ["Visual Charts", "Category Management", "Secure Auth"],
-    github: "#",
-    demo: "#",
+    github: "https://github.com/fatimaquratulain62/expense",
+    //demo: "#",
   },
   {
     title: "NearHelp Services",
@@ -56,8 +56,8 @@ export const PROJECTS = [
     tech: ["Flutter", "Firebase", "Google Auth"],
     tags: ["Flutter", "Firebase"],
     features: ["Geo-location", "Google Auth", "Real-time Chat"],
-    github: "#",
-    demo: "#",
+    github: "https://github.com/fatimaquratulain62/nearHelpService",
+    //demo: "#",
   },
   {
     title: "E-Commerce Shop UI",
@@ -66,8 +66,8 @@ export const PROJECTS = [
     tech: ["Flutter", "Redux", "Stripe API"],
     tags: ["Flutter"],
     features: ["Smooth Animations", "Cart Management", "Stripe Payments"],
-    github: "#",
-    demo: "#",
+    github: "https://github.com/fatimaquratulain62/bags",
+    //demo: "#",
   }
 ];
 

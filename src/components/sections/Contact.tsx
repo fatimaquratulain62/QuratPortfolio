@@ -24,7 +24,7 @@ export default function Contact() {
           
           <motion.a href={PERSONAL_INFO.socials.github} target="_blank" rel="noreferrer" whileHover={{ scale: 1.05 }} className="flex items-center gap-4 glass p-4 rounded-xl hover:border-primary/50 transition-colors text-left">
             <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center text-primary flex-shrink-0"><FaGithub /></div>
-            <div><p className="text-xs text-white/50">GitHub</p><p className="text-white text-sm font-medium">@quratulain-fatimaa</p></div>
+            <div><p className="text-xs text-white/50">GitHub</p><p className="text-white text-sm font-medium">@fatimaquratulain62</p></div>
           </motion.a>
           
           <motion.a href={PERSONAL_INFO.socials.linkedin} target="_blank" rel="noreferrer" whileHover={{ scale: 1.05 }} className="flex items-center gap-4 glass p-4 rounded-xl hover:border-primary/50 transition-colors text-left">
