@@ -36,7 +36,7 @@ export const PROJECTS = [
     tech: ["Next.js", "TypeScript", "OpenAI", "Tailwind"],
     tags: ["Web", "AI"],
     features: ["AI Resume Builder", "Auto Job Matching", "Dark Mode UI"],
-    github: "",
+    github: "https://github.com/fatimaquratulain62/JobApplierSaaS",
     //demo: "#",
   },
   {
