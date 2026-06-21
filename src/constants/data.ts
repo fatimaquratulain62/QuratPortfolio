@@ -1,4 +1,6 @@
-﻿export const PERSONAL_INFO = {
+﻿import { PersonalInfo, AboutMe, SkillCategory, Project, ExperienceItem, EducationItem, Certification, Achievement, Service, Testimonial, Blog } from "@/types";
+
+export const PERSONAL_INFO: PersonalInfo = {
   name: "Qurat-ul-Ain Fatima",
   role: "Flutter Developer | Full-Stack Developer | Software Engineering Student",
   bio: "Building beautiful, scalable, and user-focused applications. I specialize in Flutter, Firebase, and modern web technologies.",
@@ -14,13 +16,13 @@
   }
 };
 
-export const ABOUT_ME = {
+export const ABOUT_ME: AboutMe = {
   journey: "I'm a Software Engineering student passionate about Flutter, Firebase, AI-powered applications, and modern web technologies. I enjoy solving real-world problems through clean, maintainable code.",
   interests: "Mobile App Development, UI/UX Design, Artificial Intelligence, Open Source Contributing.",
   goals: "To become a Lead Mobile Engineer and build AI-driven applications that impact millions of users globally."
 };
 
-export const SKILLS = [
+export const SKILLS: SkillCategory[] = [
   { category: "Languages", items: [{ name: "Dart", level: 90 }, { name: "JavaScript", level: 85 }, { name: "TypeScript", level: 80 }, { name: "Python", level: 75 }, { name: "C++", level: 70 }] },
   { category: "Frameworks", items: [{ name: "Flutter", level: 95 }, { name: "Next.js", level: 85 }, { name: "React", level: 85 }, { name: "Node.js", level: 80 }] },
   { category: "Backend", items: [{ name: "Firebase", level: 90 }, { name: "REST APIs", level: 85 }, { name: "Express.js", level: 75 }] },
@@ -28,7 +30,7 @@ export const SKILLS = [
   { category: "Tools", items: [{ name: "Git", level: 90 }, { name: "GitHub", level: 90 }, { name: "VS Code", level: 95 }, { name: "Android Studio", level: 90 }, { name: "Figma", level: 85 }] },
 ];
 
-export const PROJECTS = [
+export const PROJECTS: Project[] = [
   {
     title: "JobApplier AI",
     description: "An AI-powered job search agent platform that assists users in finding jobs and building tailored resumes automatically.",
@@ -37,7 +39,7 @@ export const PROJECTS = [
     tags: ["Web", "AI"],
     features: ["AI Resume Builder", "Auto Job Matching", "Dark Mode UI"],
     github: "https://github.com/fatimaquratulain62/JobApplierSaaS",
-    //demo: "#",
+    // demo: "#",
   },
   {
     title: "Budget Tracker App",
@@ -47,7 +49,7 @@ export const PROJECTS = [
     tags: ["Web"],
     features: ["Visual Charts", "Category Management", "Secure Auth"],
     github: "https://github.com/fatimaquratulain62/expense",
-    //demo: "#",
+    // demo: "#",
   },
   {
     title: "NearHelp Services",
@@ -57,7 +59,7 @@ export const PROJECTS = [
     tags: ["Flutter", "Firebase"],
     features: ["Geo-location", "Google Auth", "Real-time Chat"],
     github: "https://github.com/fatimaquratulain62/nearHelpService",
-    //demo: "#",
+    // demo: "#",
   },
   {
     title: "E-Commerce Shop UI",
@@ -67,32 +69,36 @@ export const PROJECTS = [
     tags: ["Flutter"],
     features: ["Smooth Animations", "Cart Management", "Stripe Payments"],
     github: "https://github.com/fatimaquratulain62/bags",
-    //demo: "#",
+    // demo: "#",
   }
 ];
 
-export const EXPERIENCE = [
+export const EXPERIENCE: ExperienceItem[] = [
   { role: "Flutter Developer ",  duration: "Present", description: "Developed cross-platform mobile applications with seamless UI and robust Firebase backend integration." },
   { role: "Tech Club Lead", company: "Software Engineering University of Gujrat Tech Club", duration: "2024 - 2026", description: "Led a team of 5 designers to organize university hackathons and events." },
 ];
 
-export const EDUCATION = [
+export const EDUCATION: EducationItem[] = [
   { degree: "BS Software Engineering", institution: "University of Gujrat", duration: "2023 - 2027 (Expected)", details: "GPA: 3.91/4.0. Relevant Coursework: Data Structures, OOP, Database Systems, Software Design." },
 ];
 
-export const CERTIFICATIONS = [
+export const CERTIFICATIONS: Certification[] = [
   { title: "Inovent-Innovation & Entrepreneurship Event", issuer: "University of Gujrat", year: "2024" }
 ];
 
-export const ACHIEVEMENTS = [
+export const ACHIEVEMENTS: Achievement[] = [
   { title: "Winner - University Requirement Engineering Hackathon 2025", description: "1st place for building an AI-driven disaster management app." },
   { title: "Certificate of Appreciation by Student Service Centre", description: "Successfully organized the event." },
   { title: "Winner - University Requirement Engineering Competition 2025", description: "1st place out of 30 teams for requirement engineering and designing." },
 ];
 
-export const SERVICES = [
+export const SERVICES: Service[] = [
   { title: "Flutter App Development", icon: "FaMobile", description: "Cross-platform iOS & Android apps with native performance." },
   { title: "Web Development", icon: "FaLaptop", description: "Responsive websites with modern design and functionality." },
   { title: "UI Implementation", icon: "FaPaintBrush", description: "Converting Figma designs into pixel-perfect, animated UI." },
   { title: "Firebase Integration", icon: "FaDatabase", description: "Real-time databases, authentication, and cloud functions." },
 ];
+
+// Exporting empty arrays so the website doesn't crash if you want to keep them hidden
+export const TESTIMONIALS: Testimonial[] = [];
+export const BLOGS: Blog[] = [];

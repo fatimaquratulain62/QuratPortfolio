@@ -39,27 +39,40 @@ export const Skills = () => (
   </section>
 );
 
-export const Experience = () => (
-  <section id="experience" className="py-32 px-4 max-w-4xl mx-auto">
-    <motion.h2 initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-4xl md:text-5xl font-bold text-center mb-16 bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent">Experience & Education</motion.h2>
-    <div className="relative border-l-2 border-primary/30 ml-4 space-y-12">
-      {[...EXPERIENCE, ...EDUCATION].map((item, i) => (
-        <motion.div key={i} initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="pl-8 relative">
-          <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-primary border-4 border-background"></div>
-          <div className="glass p-6 rounded-xl">
-            <span className="text-sm text-primary font-semibold">{item.duration || item.year}</span>
-            <h3 className="text-xl font-bold text-white mt-1">{item.role || item.degree}</h3>
-            <p className="text-white/60 mb-2">{item.company || item.institution}</p>
-            <p className="text-white/70 text-sm">{item.description || item.details}</p>
-          </div>
-        </motion.div>
-      ))}
-    </div>
-  </section>
-);
+export const Experience = () => {
+  return (
+    <section id="experience" className="py-32 px-4 max-w-4xl mx-auto">
+      <motion.h2 initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-4xl md:text-5xl font-bold text-center mb-16 bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent">Experience & Education</motion.h2>
+      <div className="relative border-l-2 border-primary/30 ml-4 space-y-12">
+        {EXPERIENCE.map((item, i) => (
+          <motion.div key={`exp-${i}`} initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="pl-8 relative">
+            <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-primary border-4 border-background"></div>
+            <div className="glass p-6 rounded-xl">
+              <span className="text-sm text-primary font-semibold">{item.duration}</span>
+              <h3 className="text-xl font-bold text-white mt-1">{item.role}</h3>
+              {item.company && <p className="text-white/60 mb-2">{item.company}</p>}
+              <p className="text-white/70 text-sm">{item.description}</p>
+            </div>
+          </motion.div>
+        ))}
+        
+        {EDUCATION.map((item, i) => (
+          <motion.div key={`edu-${i}`} initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="pl-8 relative">
+            <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-primary border-4 border-background"></div>
+            <div className="glass p-6 rounded-xl">
+              <span className="text-sm text-primary font-semibold">{item.duration}</span>
+              <h3 className="text-xl font-bold text-white mt-1">{item.degree}</h3>
+              <p className="text-white/60 mb-2">{item.institution}</p>
+              <p className="text-white/70 text-sm">{item.details}</p>
+            </div>
+          </motion.div>
+        ))}
+      </div>
+    </section>
+  );
+};
 
 export const Achievements = () => {
-  // Hide section if both arrays are empty/commented out
   if ((!ACHIEVEMENTS || ACHIEVEMENTS.length === 0) && (!CERTIFICATIONS || CERTIFICATIONS?.length === 0)) return null;
   
   return (
